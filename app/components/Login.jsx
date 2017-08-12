@@ -122,7 +122,7 @@ export class Login extends Component {
           lineHeight: "32px",
           margin: "auto",
           color: "rgba(138, 148, 138, 0.2)"
-        }}>Green</h1>
+        }}>Monsta</h1>
 
         <div className="animate-bottom">
           <Paper style={paperStyle} zDepth={1} rounded={false} >

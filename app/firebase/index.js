@@ -2,12 +2,12 @@ import firebase from 'firebase';
 
 try {
   var config = {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    databaseURL: process.env.DATABASE_URL,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID
+   apiKey: "AIzaSyBMrcRj-FD9Yk6NQuazr8g3Qv8RozOJoLE",
+    authDomain: "react-monsta-dev.firebaseapp.com",
+    databaseURL: "https://react-monsta-dev.firebaseio.com",
+    projectId: "react-monsta-dev",
+    storageBucket: "react-monsta-dev.appspot.com",
+    messagingSenderId: "77140180232"
   }
 
   firebase.initializeApp(config);

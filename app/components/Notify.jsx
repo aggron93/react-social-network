@@ -97,7 +97,7 @@ export class Notify extends Component {
         onRequestClose={onRequestClose}
       >
         <div className='container'>
-          <div className='title'>Green </div>
+          <div className='title'>Monsta </div>
           <div className='content'>
             {this.notifyItemList()}
           </div>

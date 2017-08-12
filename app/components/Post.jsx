@@ -391,7 +391,7 @@ static propTypes = {
               {/*<FloatingActionButton  style={{ margin: "0 8px" }} zDepth={1} backgroundColor={grey200} iconStyle={{ color: grey600, fill: grey600, height: "36px", width: "36px" }} zDepth={1} secondary={false}>*/}
              <div className='g__circle' onClick={this.handleVote}>
               <Checkbox
-                                checkedIcon={<SvgFavorite style={{fill:'#4CAF50'}}/>}
+                                checkedIcon={<SvgFavorite style={{fill:'#fcb040'}}/>}
                                 uncheckedIcon={<SvgFavoriteBorder style={{fill:'#757575'}} />}
                                 defaultChecked={this.props.userVoteStatus}
                                 style={{transform: 'translate(6px, 6px)'}}

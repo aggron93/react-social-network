@@ -36,7 +36,7 @@ export default class MasterLoading extends Component {
       <div className="mLoading__context">
 
             <CircularProgress color="white" size={80} thickness={7} />
-           <h1 style={{float:"right", color:"#fff"}}>Green</h1>
+           <h1 style={{float:"right", color:"#fff"}}>Monsta</h1>
 
       </div>
   </div>

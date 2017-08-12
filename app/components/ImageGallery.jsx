@@ -17,8 +17,8 @@ import uuid from 'uuid'
 
 // - Import actions
 import * as imageGalleryActions from 'imageGalleryActions'
-import * as fileActions from 'fileActions'
-import * as globalActions from 'globalActions'
+/* import * as fileActions from 'fileActions'
+ */import * as globalActions from 'globalActions'
 
 // - Import app components
 import Img from 'Img'

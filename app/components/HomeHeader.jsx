@@ -206,7 +206,7 @@ export class HomeHeader extends Component {
             <SvgDehaze style={{ color: "#fff", marginLeft: "15px", cursor: "pointer" }} />
           </IconButton>
           {/* Header title */}
-          <ToolbarTitle style={{ color: "#fff", marginLeft: "15px" }} text="Green" />
+          <ToolbarTitle style={{ color: "#fff", marginLeft: "15px" }} text="Monsta" />
           {this.state.showTitle ? <div className="homeHeader__page">{this.props.title}</div> : ''}
         </ToolbarGroup>
         <ToolbarGroup>
