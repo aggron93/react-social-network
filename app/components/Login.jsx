@@ -162,12 +162,15 @@ export class Login extends Component {
               /><br />
               <br />
               <br />
+              <div >
+                  <RaisedButton label="Login" primary={true} onClick={this.handleForm} tabIndex={3} />
+                </div>
               <div className="login__button-box">
                 <div>
-                  <FlatButton label="Create an account" onClick={this.props.signupPage} tabIndex={4} />
+                  <RaisedButton label="Register Company" onClick={this.props.signupPage} tabIndex={4} />
                 </div>
-                <div >
-                  <RaisedButton label="Login" primary={true} onClick={this.handleForm} tabIndex={3} />
+                <div>
+                  <RaisedButton label="Register Student" onClick={this.props.signupPageStudent} tabIndex={4} />
                 </div>
               </div>
 
@@ -192,6 +195,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     signupPage: () => {
       dispatch(push("/signup"))
+    },
+    signupPageStudent:()=>{
+      dispatch(push("/signupStudent"))
     }
   }
 }

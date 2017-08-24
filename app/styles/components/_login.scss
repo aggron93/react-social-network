@@ -1,4 +1,6 @@
 .login__button-box {
     display: flex;
-    justify-content: space-around;
+    flex-direction:row;
+    margin: 10;
+    padding: 10;
 }

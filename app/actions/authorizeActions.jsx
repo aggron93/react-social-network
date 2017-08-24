@@ -127,8 +127,16 @@ export var signup = (user) => {
     type: types.SIGNUP,
     ...user
   }
-
 }
+  
+  export var signupStudent = (user)=>{
+    return{
+      type:types.SIGNUP,
+      ...user
+    }
+  }
+
+
 
 /**
  * Update user's password

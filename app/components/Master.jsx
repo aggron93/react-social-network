@@ -13,7 +13,8 @@ import Home from 'Home'
 import Signup from 'Signup'
 import Login from 'Login'
 import Settings from 'Settings'
-
+import SignupStudent from 'SignupStudent'
+ 
 import MasterLoading from 'MasterLoading'
 
 
@@ -126,6 +127,7 @@ export class Master extends Component {
         {(!this.state.loading && (this.props.loaded || this.props.guest))
         ?(<Switch>
           <Route path="/signup" component={Signup} />
+          <Route path ="/signupStudent" component ={SignupStudent}/>
           <Route path="/settings" component={Settings} />
           <Route path="/login" render={() => {
             console.log('this.props.authed: ', this.props.authed, "this.props: ", this.props)

@@ -16,7 +16,7 @@ import * as globalActions from 'globalActions'
 
 
 // - Create Signup componet class
-export class Signup extends Component {
+export class SignupStudent extends Component {
 
   /**
    * Component constructor
@@ -34,7 +34,7 @@ export class Signup extends Component {
       passwordInputError: '',
       confirmInput: '',
       confirmInputError: '',
-      role:'company'
+      role:"student"
 
     }
     // Binding function to `this`
@@ -181,7 +181,7 @@ export class Signup extends Component {
              fontSize: "24px",
              fontWeight: 400,
              lineHeight: "32px",
-             margin: 0}}>Company Sign up</h2>
+             margin: 0}}> Student Sign up</h2>
          </div>
 
      <TextField
@@ -270,4 +270,4 @@ const mapStateToProps = (state,ownProps) => {
 }
 
 // - Connect component to redux store
-export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Signup))
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(SignupStudent))
