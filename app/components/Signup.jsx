@@ -8,6 +8,7 @@ import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 
+
 // - Import actions
 import *  as authorizeActions from 'authorizeActions'
 import * as globalActions from 'globalActions'
@@ -34,7 +35,8 @@ export class Signup extends Component {
       passwordInputError: '',
       confirmInput: '',
       confirmInputError: '',
-      role:'company'
+      role:'company',
+      company:''
 
     }
     // Binding function to `this`
@@ -135,7 +137,8 @@ export class Signup extends Component {
           email: this.state.emailInput,
           password: this.state.passwordInput,
           fullName: this.state.fullNameInput,
-          role:this.state.role
+          role:this.state.role,
+          company:this.state.company
         })
      }
 
@@ -215,11 +218,19 @@ export class Signup extends Component {
     floatingLabelStyle={{fontSize:"15px"}}
    floatingLabelText="Confirm Password"
    type="password"
+ /><br/>
+ <TextField
+    onChange={this.handleInputChange}
+    errorText={this.state.confirmInputError }
+    name="company"
+    floatingLabelStyle={{fontSize:"15px"}}
+   floatingLabelText="Company"
+   type="text"
  /><br />
 <br />
-  <div className="signup__button-box">
+  <div className="signup__button-box" style={{justifyContent:'space-around'}}>
     <div>
-      <FlatButton label="Login" onClick={this.props.loginPage} />
+      <RaisedButton  label="Back to Login" onClick={this.props.loginPage} />
     </div>
     <div>
       <RaisedButton label="Create" primary={true} onClick={this.handleForm}/>

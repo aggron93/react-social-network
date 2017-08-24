@@ -53,7 +53,8 @@ export const dbGetUserInfoByUserId = (uid, sw) => {
           email: userInfo.email,
           fullName: userInfo.fullName,
           banner: userInfo.banner,
-          tagLine: userInfo.tagLine
+          tagLine: userInfo.tagLine,
+          university:userInfo.university
         }))
         switch (sw) {
           case 'header':

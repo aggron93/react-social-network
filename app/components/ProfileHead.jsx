@@ -56,9 +56,9 @@ export class ProfileHead extends Component {
         /**
          * If the user profile identifier of param is equal to the user authed identifier 
          */
-        isAuthedUser: PropTypes.bool
+        isAuthedUser: PropTypes.bool,
 
-
+        university:PropTypes.string
 
     }
 
@@ -196,6 +196,10 @@ export class ProfileHead extends Component {
                         <div className='info'>
                             <div className='fullName'>
                                 {this.props.fullName}
+                            </div>
+                            <div>
+                                <text></text>
+                                {this.props.university}
                             </div>
                             {/*<div className='followers'>
                                 {this.props.followerCount} Followers

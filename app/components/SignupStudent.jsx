@@ -34,7 +34,10 @@ export class SignupStudent extends Component {
       passwordInputError: '',
       confirmInput: '',
       confirmInputError: '',
-      role:"student"
+      role:"student",
+      phoneNumber:'',
+      university:'',
+      course:''
 
     }
     // Binding function to `this`
@@ -135,7 +138,10 @@ export class SignupStudent extends Component {
           email: this.state.emailInput,
           password: this.state.passwordInput,
           fullName: this.state.fullNameInput,
-          role:this.state.role
+          role:this.state.role,
+          phoneNumber:this.state.phoneNumber,
+          university:this.state.university,
+          course:this.state.course
         })
      }
 
@@ -216,14 +222,36 @@ export class SignupStudent extends Component {
    floatingLabelText="Confirm Password"
    type="password"
  /><br />
+ <TextField
+    onChange={this.handleInputChange}
+    name="phoneNumber"
+    floatingLabelStyle={{fontSize:"15px"}}
+   floatingLabelText="Phone Number"
+   type="text"
+ /><br/>
+ <TextField
+    onChange={this.handleInputChange}
+    name="university"
+    floatingLabelStyle={{fontSize:"15px"}}
+    floatingLabelText="University"
+    type="text"
+ /><br />
+ <TextField
+    onChange={this.handleInputChange}
+    name="course"
+    floatingLabelStyle={{fontSize:"15px"}}
+    floatingLabelText="Course"
+    type="text"
+ />
 <br />
-  <div className="signup__button-box">
+<br />
+
+  <div className="signup__button-box" style={{justifyContent:'space-around'}}>
     <div>
-      <FlatButton label="Login" onClick={this.props.loginPage} />
+      <RaisedButton  label="Back to Login" onClick={this.props.loginPage} />
     </div>
     <div>
       <RaisedButton label="Create" primary={true} onClick={this.handleForm}/>
-
     </div>
   </div>
 

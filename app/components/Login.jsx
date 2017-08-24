@@ -166,11 +166,11 @@ export class Login extends Component {
                   <RaisedButton label="Login" primary={true} onClick={this.handleForm} tabIndex={3} />
                 </div>
               <div className="login__button-box">
-                <div>
-                  <RaisedButton label="Register Company" onClick={this.props.signupPage} tabIndex={4} />
+                <div style={{padding:2,paddingTop:10}}>
+                  <RaisedButton  label="Register Company" onClick={this.props.signupPage}  />
                 </div>
-                <div>
-                  <RaisedButton label="Register Student" onClick={this.props.signupPageStudent} tabIndex={4} />
+                <div style={{padding:2,paddingTop:10}}>
+                  <RaisedButton label="Register Student" onClick={this.props.signupPageStudent}  />
                 </div>
               </div>
 
